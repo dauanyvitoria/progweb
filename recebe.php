@@ -7,7 +7,7 @@ list($ano,$mes,$dia) = explode('-', $data);
 $hoje = mktime(0, 0, 0, date('m'), date('d'), date('Y'));
 // Descobre a unix timestamp da data de nascimento do Fulano
 $nascimento = mktime( 0, 0, 0, $mes, $dia, $ano);
-// Depois apenas fazemos o cálculo já citado :)
+// Depois apenas fazemos o calculo já citado:)
 $idade = floor((((($hoje - $nascimento) / 60) / 60) / 24) / 365.25);
 ?>
 
